@@ -1,0 +1,31 @@
+.sidebar-nav ul li {
+    font-size: 20px;
+    list-style: none;
+    margin-bottom: 30px;
+    padding: 18px;
+    color: #C1C1C1;
+    border-radius: 7px;
+    cursor:pointer;
+}
+.sidebar-nav ul li.active{
+    background-color: #006838;
+    position:relative;
+    color:white;
+}
+.sidebar-nav ul li.active::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    top: 0;
+    left: -20px;
+    background: green;
+}
+
+button.log-out {
+    border: none;
+    background: transparent;
+    font-size: 17px;
+    color: #C1C1C1;
+    cursor:pointer;
+}
