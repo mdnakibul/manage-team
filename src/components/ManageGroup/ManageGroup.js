@@ -10,7 +10,7 @@ const ManageGroup = () => {
                 <LeftSidebar />
                 {/* Dashboard Content  */}
                 <div className="col-md-7" style={{ background: '#9bd6ab24' }}>
-                    <div className="top d-flex align-items-center justify-content-between">
+                    <div className="top d-flex align-items-center justify-content-between pt-5">
                         <div>
                             <h2>Dashboard//Admin</h2>
                             <p>Add, Edit, Delete Users</p>
