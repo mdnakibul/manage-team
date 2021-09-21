@@ -4,14 +4,15 @@ import LeftSidebar from '../LeftSidebar/LeftSidebar';
 import RightSidebar from '../RightSidebar/RightSidebar';
 import './ManageUser.css'
 
-const Dashboard = () => {
+const ManageUser = () => {
     return (
-        <div className="container">
+        <div className="container-fluid">
             <div className="row">
                 <LeftSidebar />
-                {/* Dashboard Content  */}
-                <div className="col-md-7" style={{ background: '#9bd6ab24' }}>
-                    <div className="top d-flex align-items-center justify-content-between">
+
+                {/* Manage User Content  */}
+                <div className="col-md-7" style={{ background: '#f7f9fd' }}>
+                    <div className="top d-flex align-items-center justify-content-between pt-5">
                         <div>
                             <h2>Dashboard//Admin</h2>
                             <p>Add, Edit, Delete Users</p>
@@ -23,7 +24,7 @@ const Dashboard = () => {
                     </div>
                     {/* Summery  */}
 
-                    <div className="summery">
+                    <div className="summery pt-3">
                         <h2>Summery</h2>
                         <div className="d-flex summery-blocks justify-content-between mt-3">
                             <div className="summery-block">
@@ -140,4 +141,4 @@ const Dashboard = () => {
     );
 };
 
-export default Dashboard;
+export default ManageUser;

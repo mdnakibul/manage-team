@@ -10,9 +10,9 @@ const LeftSidebar = () => {
     // #C1C1C1 black font 
 
     return (
-        <div className="col-md-2">
-            <img className="img-fluid" src={logo} alt="Logo" />
-            <div className="sidebar-nav">
+        <div className="col-md-2 text-center">
+            <img className="img-fluid" src={logo} alt="Logo" className="pt-4" />
+            <div className="sidebar-nav pt-4">
                 <ul>
                     <li className="active"> <span className="fas fa-user-friends me-2"></span>Admin</li>
                     <li> <span className="fas fa-heart"></span> Products</li>

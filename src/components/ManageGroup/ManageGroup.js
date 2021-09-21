@@ -5,7 +5,7 @@ import '../ManageUser/ManageUser.css'
 
 const ManageGroup = () => {
     return (
-        <div className="container">
+        <div className="container-fluid">
             <div className="row">
                 <LeftSidebar />
                 {/* Dashboard Content  */}
@@ -22,7 +22,7 @@ const ManageGroup = () => {
                     </div>
                     {/* Summery  */}
 
-                    <div className="summery group-summery">
+                    <div className="summery group-summery pt-4">
                         <h2>Group Summery</h2>
                         <div className="d-flex summery-blocks justify-content-between mt-3">
                             <div className="summery-block">

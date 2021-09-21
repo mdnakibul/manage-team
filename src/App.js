@@ -4,7 +4,7 @@ import {
   Route,
 } from "react-router-dom";
 import ManageGroup from "./components/ManageGroup/ManageGroup";
-import ManageUser from "./components/ManageGroup/ManageGroup";
+import ManageUser from "./components/ManageUser/ManageUser";
 
 function App() {
   return (
