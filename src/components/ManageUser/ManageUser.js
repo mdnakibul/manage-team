@@ -2,9 +2,33 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import LeftSidebar from '../LeftSidebar/LeftSidebar';
 import RightSidebar from '../RightSidebar/RightSidebar';
+import SummeryBlock from '../SummeryBlock/SummeryBlock';
 import './ManageUser.css'
 
 const ManageUser = () => {
+    const UserSummery = [
+        {
+            icon: 'fas fa-user-shield',
+            title: 'Admin',
+            number: 25
+        },
+        {
+            icon: 'fas fa-user-friends',
+            title: 'Users',
+            number: 15
+        },
+        {
+            icon: 'fas fa-users',
+            title: 'Groups',
+            number: 9
+        },
+        {
+            icon: 'fas fa-user-tie',
+            title: 'Roles',
+            number: 4
+        }
+    ]
+
     return (
         <div className="container-fluid">
             <div className="row">
@@ -27,22 +51,9 @@ const ManageUser = () => {
                     <div className="summery pt-3">
                         <h2>Summery</h2>
                         <div className="d-flex summery-blocks justify-content-between mt-3">
-                            <div className="summery-block">
-                                <h4>Admins</h4>
-                                <p>5 Admins</p>
-                            </div>
-                            <div className="summery-block">
-                                <h4>Users</h4>
-                                <p>5 Users</p>
-                            </div>
-                            <div className="summery-block">
-                                <h4>Groups</h4>
-                                <p>5 Groups</p>
-                            </div>
-                            <div className="summery-block">
-                                <h4>Roles</h4>
-                                <p>5 Roles</p>
-                            </div>
+                            {
+                                UserSummery.map(user => <SummeryBlock summeryInfo={user}></SummeryBlock>)
+                            }
                         </div>
                     </div>
 
@@ -70,7 +81,7 @@ const ManageUser = () => {
                     {/* Data Table  */}
 
                     <table className="table table-striped table-responsive mt-4">
-                        <thead className="thead-success" style={{background:'006838'}}>
+                        <thead className="thead-success" style={{ background: '006838' }}>
                             <tr>
                                 <th scope="col">User Id</th>
                                 <th scope="col">Name</th>
@@ -130,8 +141,8 @@ const ManageUser = () => {
                                     <button className="btn btn-danger"><span className="fas fa-trash"></span>delete</button>
                                 </td>
                             </tr>
-                            
-                            
+
+
                         </tbody>
                     </table>
                 </div>

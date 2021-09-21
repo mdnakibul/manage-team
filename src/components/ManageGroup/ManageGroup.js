@@ -2,8 +2,28 @@ import React from 'react';
 import LeftSidebar from '../LeftSidebar/LeftSidebar';
 import RightSidebar from '../RightSidebar/RightSidebar';
 import '../ManageUser/ManageUser.css'
+import SummeryBlock from '../SummeryBlock/SummeryBlock';
 
 const ManageGroup = () => {
+
+    const GroupSummery = [
+        {
+            title: 'Total Group',
+            number: 25
+        },
+        {
+            title: 'This Year',
+            number: 15
+        },
+        {
+            title: 'This Month',
+            number: 9
+        },
+        {
+            title: 'This Week',
+            number: 4
+        }
+    ]
     return (
         <div className="container-fluid">
             <div className="row">
@@ -25,22 +45,9 @@ const ManageGroup = () => {
                     <div className="summery group-summery pt-4">
                         <h2>Group Summery</h2>
                         <div className="d-flex summery-blocks justify-content-between mt-3">
-                            <div className="summery-block">
-                                <h4>Total Groups</h4>
-                                <p>5 Groups</p>
-                            </div>
-                            <div className="summery-block">
-                                <h4>This Year</h4>
-                                <p>5 Groups</p>
-                            </div>
-                            <div className="summery-block">
-                                <h4>This Month</h4>
-                                <p>5 Groups</p>
-                            </div>
-                            <div className="summery-block">
-                                <h4>This week</h4>
-                                <p>5 Groups</p>
-                            </div>
+                            {
+                                GroupSummery.map(group => <SummeryBlock summerInfo={group}></SummeryBlock>)
+                            }
                         </div>
                     </div>
 
