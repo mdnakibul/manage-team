@@ -32,25 +32,25 @@ const ManageGroup = () => {
     const groupTableHeadings = ['User ID', 'Name', 'Username', 'Email', 'Creation Date', 'User Details', 'Action'];
     const groupTableData = [
         {
-            id: 545345,
+            id: 545325,
             name: 'frontend',
             date: '4:44 AM 12 August,2020',
             description: 'Development'
         },
         {
-            id: 545345,
+            id: 545245,
             name: 'frontend',
             date: '4:44 AM 12 August,2020',
             description: 'Development'
         },
         {
-            id: 545345,
+            id: 555345,
             name: 'frontend',
             date: '4:44 AM 12 August,2020',
             description: 'Development'
         },
         {
-            id: 545345,
+            id: 545395,
             name: 'frontend',
             date: '4:44 AM 12 August,2020',
             description: 'Development'
@@ -78,7 +78,7 @@ const ManageGroup = () => {
                         <h2>Group Summery</h2>
                         <div className="d-flex summery-blocks justify-content-between mt-3">
                             {
-                                GroupSummery.map(group => <SummeryBlock summeryInfo={group}></SummeryBlock>)
+                                GroupSummery.map(group => <SummeryBlock summeryInfo={group} key={group.title}></SummeryBlock>)
                             }
                         </div>
                     </div>

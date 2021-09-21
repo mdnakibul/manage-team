@@ -11,7 +11,7 @@ const LeftSidebar = () => {
 
     return (
         <div className="col-md-2 text-center">
-            <img className="img-fluid" src={logo} alt="Logo" className="pt-4" />
+            <img className="img-fluid pt-4" src={logo} alt="Logo" />
             <div className="sidebar-nav pt-4">
                 <ul>
                     <li className="active"> <span className="fas fa-user-friends me-2"></span>Admin</li>

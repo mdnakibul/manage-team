@@ -10,7 +10,7 @@ const DataTable = (props) => {
                 {
                     props.userData.map(data => {
                         return (
-                            <tr>
+                            <tr key={data.id}>
                                 <td>{data.id}</td>
                                 <td>{data.name}</td>
                                 <td>{data.username}</td>

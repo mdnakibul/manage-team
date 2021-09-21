@@ -5,7 +5,7 @@ const TableHead = (props) => {
         <thead className="thead-success" style={{ background: '006838' }}>
             <tr>
                 {
-                    props.headingData.map(heading => <th scope="col">{heading}</th>)
+                    props.headingData.map(heading => <th key={heading} scope="col">{heading}</th>)
                 }
             </tr>
         </thead>

@@ -40,28 +40,28 @@ const ManageUser = () => {
             date: '4:44 Am, 17 August 2020',
         },
         {
-            id: 54345,
+            id: 54335,
             name: 'Ifaz',
             username: 'ifaz',
             email: 'ifaz@gmail.com',
             date: '4:44 Am, 17 August 2020',
         },
         {
-            id: 54345,
+            id: 54325,
             name: 'Ifaz',
             username: 'ifaz',
             email: 'ifaz@gmail.com',
             date: '4:44 Am, 17 August 2020',
         },
         {
-            id: 54345,
+            id: 54355,
             name: 'Ifaz',
             username: 'ifaz',
             email: 'ifaz@gmail.com',
             date: '4:44 Am, 17 August 2020',
         },
         {
-            id: 54345,
+            id: 54346,
             name: 'Ifaz',
             username: 'ifaz',
             email: 'ifaz@gmail.com',
@@ -92,7 +92,7 @@ const ManageUser = () => {
                         <h2>Summery</h2>
                         <div className="d-flex summery-blocks justify-content-between mt-3">
                             {
-                                UserSummery.map(user => <SummeryBlock summeryInfo={user}></SummeryBlock>)
+                                UserSummery.map(user => <SummeryBlock summeryInfo={user} key={user.title}></SummeryBlock>)
                             }
                         </div>
                     </div>
