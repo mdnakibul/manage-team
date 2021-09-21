@@ -1,0 +1,27 @@
+.dashboard-btn{
+    background: green;
+    color: white;
+    font-size:22px;
+    border-radius:10px;
+    padding:15px
+}
+.top{
+    padding-top:10px;
+}
+.top div h2{
+    color:#9BD6AB;
+}
+.top div p {
+    color:#C1C1C1
+}
+.top  div p, .top div h2{
+    margin: 0
+}
+.summery h2{
+    margin-bottom:0px
+}
+.summery-block{
+    background-color:#fff;
+    border-radius:10px;
+    padding: 0px 50px
+}
