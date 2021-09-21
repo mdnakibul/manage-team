@@ -3,17 +3,21 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import Dashboard from "./components/Dashboard/Dashboard";
+import ManageGroup from "./components/ManageGroup/ManageGroup";
+import ManageUser from "./components/ManageGroup/ManageGroup";
 
 function App() {
   return (
     <Router>
       <Switch>
         <Route exact path="/">
-          <Dashboard/>
+          <ManageUser/>
         </Route>
         <Route path="/dash-board/admin/manage-user">
-          <Dashboard/>
+          <ManageUser/>
+        </Route>
+        <Route path="/dash-board/admin/manage-group">
+          <ManageGroup/>
         </Route>
       </Switch>
     </Router>

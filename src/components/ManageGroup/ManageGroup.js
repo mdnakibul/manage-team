@@ -1,10 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import LeftSidebar from '../LeftSidebar/LeftSidebar';
 import RightSidebar from '../RightSidebar/RightSidebar';
-import './Dashboard.css'
+import '../ManageUser/ManageUser.css'
 
-const Dashboard = () => {
+const ManageGroup = () => {
     return (
         <div className="container">
             <div className="row">
@@ -23,24 +22,24 @@ const Dashboard = () => {
                     </div>
                     {/* Summery  */}
 
-                    <div className="summery">
-                        <h2>Summery</h2>
+                    <div className="summery group-summery">
+                        <h2>Group Summery</h2>
                         <div className="d-flex summery-blocks justify-content-between mt-3">
                             <div className="summery-block">
-                                <h4>Admins</h4>
-                                <p>5 Admins</p>
-                            </div>
-                            <div className="summery-block">
-                                <h4>Users</h4>
-                                <p>5 Users</p>
-                            </div>
-                            <div className="summery-block">
-                                <h4>Groups</h4>
+                                <h4>Total Groups</h4>
                                 <p>5 Groups</p>
                             </div>
                             <div className="summery-block">
-                                <h4>Roles</h4>
-                                <p>5 Roles</p>
+                                <h4>This Year</h4>
+                                <p>5 Groups</p>
+                            </div>
+                            <div className="summery-block">
+                                <h4>This Month</h4>
+                                <p>5 Groups</p>
+                            </div>
+                            <div className="summery-block">
+                                <h4>This week</h4>
+                                <p>5 Groups</p>
                             </div>
                         </div>
                     </div>
@@ -71,12 +70,10 @@ const Dashboard = () => {
                     <table className="table table-striped table-responsive mt-4">
                         <thead className="thead-success" style={{background:'006838'}}>
                             <tr>
-                                <th scope="col">User Id</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">Username</th>
-                                <th scope="col">Email</th>
-                                <th scope="col">Creation Date</th>
-                                <th scope="col">User Details</th>
+                                <th scope="col">Group Id</th>
+                                <th scope="col">Group Name</th>
+                                <th scope="col">Creation Date </th>
+                                <th scope="col">Group Description</th>
                                 <th scope="col">Action</th>
                             </tr>
                         </thead>
@@ -84,10 +81,8 @@ const Dashboard = () => {
                             <tr>
                                 <td>#534531</td>
                                 <td>Ifaz Ahmed</td>
-                                <td>Ifaz Ahmed</td>
-                                <td>ifaz@gmail.com</td>
                                 <td>@4:44 Am, 17 August 2020</td>
-                                <td><Link to="/">View Details</Link></td>
+                                <td>Support Live customer</td>
                                 <td className="d-flex align-items-center justify-content-between">
                                     <button className="btn btn-success me-1"><span className="fas fa-edit"></span>edit</button>
                                     <button className="btn btn-danger"><span className="fas fa-trash"></span>delete</button>
@@ -96,10 +91,8 @@ const Dashboard = () => {
                             <tr>
                                 <td>#534531</td>
                                 <td>Ifaz Ahmed</td>
-                                <td>Ifaz Ahmed</td>
-                                <td>ifaz@gmail.com</td>
                                 <td>@4:44 Am, 17 August 2020</td>
-                                <td><Link to="/">View Details</Link></td>
+                                <td>Support Live customer</td>
                                 <td className="d-flex align-items-center justify-content-between">
                                     <button className="btn btn-success me-1"><span className="fas fa-edit"></span>edit</button>
                                     <button className="btn btn-danger"><span className="fas fa-trash"></span>delete</button>
@@ -108,10 +101,8 @@ const Dashboard = () => {
                             <tr>
                                 <td>#534531</td>
                                 <td>Ifaz Ahmed</td>
-                                <td>Ifaz Ahmed</td>
-                                <td>ifaz@gmail.com</td>
                                 <td>@4:44 Am, 17 August 2020</td>
-                                <td><Link to="/">View Details</Link></td>
+                                <td>Support Live customer</td>
                                 <td className="d-flex align-items-center justify-content-between">
                                     <button className="btn btn-success me-1"><span className="fas fa-edit"></span>edit</button>
                                     <button className="btn btn-danger"><span className="fas fa-trash"></span>delete</button>
@@ -120,15 +111,24 @@ const Dashboard = () => {
                             <tr>
                                 <td>#534531</td>
                                 <td>Ifaz Ahmed</td>
-                                <td>Ifaz Ahmed</td>
-                                <td>ifaz@gmail.com</td>
                                 <td>@4:44 Am, 17 August 2020</td>
-                                <td><Link to="/">View Details</Link></td>
+                                <td>Support Live customer</td>
                                 <td className="d-flex align-items-center justify-content-between">
                                     <button className="btn btn-success me-1"><span className="fas fa-edit"></span>edit</button>
                                     <button className="btn btn-danger"><span className="fas fa-trash"></span>delete</button>
                                 </td>
                             </tr>
+                            <tr>
+                                <td>#534531</td>
+                                <td>Ifaz Ahmed</td>
+                                <td>@4:44 Am, 17 August 2020</td>
+                                <td>Support Live customer</td>
+                                <td className="d-flex align-items-center justify-content-between">
+                                    <button className="btn btn-success me-1"><span className="fas fa-edit"></span>edit</button>
+                                    <button className="btn btn-danger"><span className="fas fa-trash"></span>delete</button>
+                                </td>
+                            </tr>
+                            
                             
                             
                         </tbody>
@@ -140,4 +140,4 @@ const Dashboard = () => {
     );
 };
 
-export default Dashboard;
+export default ManageGroup;
