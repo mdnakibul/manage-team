@@ -16,12 +16,12 @@ const RightSidebar = () => {
     return (
         <div className="col-md-3" style={{ position: 'relative' }}>
             {/* Header Part  */}
-            <div className="header d-flex align-items-center justify-content-between mt-2">
+            <div className="header d-flex align-items-center justify-content-between pt-5">
                 <div className="d-flex">
                     <img src={management} alt="management" />
                     <h4>Management</h4>
                 </div>
-                <span className="fas fa-user-cog" style={{ color: '#FF514F' }}></span>
+                <span className="fas fa-user-cog" style={{ color: '#ef947b' }}></span>
             </div>
             <h4>Manage</h4>
             <p style={{ color: '#C1C1C1' }}>
