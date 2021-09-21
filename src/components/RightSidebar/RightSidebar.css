@@ -4,6 +4,9 @@
     border-radius: 10px;
     margin-right: 10px;
 }
+.manage-block{
+    cursor:pointer;
+}
 .manage-block-description h4, .manage-block-description p{
     margin:0px;
     padding-bottom: 5px

@@ -4,6 +4,7 @@ import {
   Route,
 } from "react-router-dom";
 import ManageGroup from "./components/ManageGroup/ManageGroup";
+import ManageRole from "./components/ManageRole/ManageRole";
 import ManageUser from "./components/ManageUser/ManageUser";
 
 function App() {
@@ -18,6 +19,9 @@ function App() {
         </Route>
         <Route path="/dash-board/admin/manage-group">
           <ManageGroup/>
+        </Route>
+        <Route path="/dash-board/admin/manage-role">
+          <ManageRole/>
         </Route>
       </Switch>
     </Router>

@@ -3,26 +3,58 @@ import LeftSidebar from '../LeftSidebar/LeftSidebar';
 import RightSidebar from '../RightSidebar/RightSidebar';
 import '../ManageUser/ManageUser.css'
 import SummeryBlock from '../SummeryBlock/SummeryBlock';
+import DataTable from '../DataTable/DataTable';
 
 const ManageGroup = () => {
 
     const GroupSummery = [
         {
+            icon:'fas fa-users',
             title: 'Total Group',
             number: 25
         },
         {
+            icon:'fas fa-user-friends',
             title: 'This Year',
             number: 15
         },
         {
+            icon:'fas fa-user-friends',
             title: 'This Month',
             number: 9
         },
         {
+            icon:'fas fa-user-friends',
             title: 'This Week',
             number: 4
         }
+    ];
+    const groupTableHeadings = ['User ID', 'Name', 'Username', 'Email', 'Creation Date', 'User Details', 'Action'];
+    const groupTableData = [
+        {
+            id: 545345,
+            name: 'frontend',
+            date: '4:44 AM 12 August,2020',
+            description: 'Development'
+        },
+        {
+            id: 545345,
+            name: 'frontend',
+            date: '4:44 AM 12 August,2020',
+            description: 'Development'
+        },
+        {
+            id: 545345,
+            name: 'frontend',
+            date: '4:44 AM 12 August,2020',
+            description: 'Development'
+        },
+        {
+            id: 545345,
+            name: 'frontend',
+            date: '4:44 AM 12 August,2020',
+            description: 'Development'
+        },
     ]
     return (
         <div className="container-fluid">
@@ -46,7 +78,7 @@ const ManageGroup = () => {
                         <h2>Group Summery</h2>
                         <div className="d-flex summery-blocks justify-content-between mt-3">
                             {
-                                GroupSummery.map(group => <SummeryBlock summerInfo={group}></SummeryBlock>)
+                                GroupSummery.map(group => <SummeryBlock summeryInfo={group}></SummeryBlock>)
                             }
                         </div>
                     </div>
@@ -73,73 +105,8 @@ const ManageGroup = () => {
 
 
                     {/* Data Table  */}
+                    <DataTable userData={groupTableData} headings={groupTableHeadings}></DataTable>
 
-                    <table className="table table-striped table-responsive mt-4">
-                        <thead className="thead-success" style={{background:'006838'}}>
-                            <tr>
-                                <th scope="col">Group Id</th>
-                                <th scope="col">Group Name</th>
-                                <th scope="col">Creation Date </th>
-                                <th scope="col">Group Description</th>
-                                <th scope="col">Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>#534531</td>
-                                <td>Ifaz Ahmed</td>
-                                <td>@4:44 Am, 17 August 2020</td>
-                                <td>Support Live customer</td>
-                                <td className="d-flex align-items-center justify-content-between">
-                                    <button className="btn btn-success me-1"><span className="fas fa-edit"></span>edit</button>
-                                    <button className="btn btn-danger"><span className="fas fa-trash"></span>delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>#534531</td>
-                                <td>Ifaz Ahmed</td>
-                                <td>@4:44 Am, 17 August 2020</td>
-                                <td>Support Live customer</td>
-                                <td className="d-flex align-items-center justify-content-between">
-                                    <button className="btn btn-success me-1"><span className="fas fa-edit"></span>edit</button>
-                                    <button className="btn btn-danger"><span className="fas fa-trash"></span>delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>#534531</td>
-                                <td>Ifaz Ahmed</td>
-                                <td>@4:44 Am, 17 August 2020</td>
-                                <td>Support Live customer</td>
-                                <td className="d-flex align-items-center justify-content-between">
-                                    <button className="btn btn-success me-1"><span className="fas fa-edit"></span>edit</button>
-                                    <button className="btn btn-danger"><span className="fas fa-trash"></span>delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>#534531</td>
-                                <td>Ifaz Ahmed</td>
-                                <td>@4:44 Am, 17 August 2020</td>
-                                <td>Support Live customer</td>
-                                <td className="d-flex align-items-center justify-content-between">
-                                    <button className="btn btn-success me-1"><span className="fas fa-edit"></span>edit</button>
-                                    <button className="btn btn-danger"><span className="fas fa-trash"></span>delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>#534531</td>
-                                <td>Ifaz Ahmed</td>
-                                <td>@4:44 Am, 17 August 2020</td>
-                                <td>Support Live customer</td>
-                                <td className="d-flex align-items-center justify-content-between">
-                                    <button className="btn btn-success me-1"><span className="fas fa-edit"></span>edit</button>
-                                    <button className="btn btn-danger"><span className="fas fa-trash"></span>delete</button>
-                                </td>
-                            </tr>
-                            
-                            
-                            
-                        </tbody>
-                    </table>
                 </div>
                 <RightSidebar />
             </div>

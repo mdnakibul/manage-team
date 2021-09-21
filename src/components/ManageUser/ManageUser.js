@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import DataTable from '../DataTable/DataTable';
 import LeftSidebar from '../LeftSidebar/LeftSidebar';
 import RightSidebar from '../RightSidebar/RightSidebar';
 import SummeryBlock from '../SummeryBlock/SummeryBlock';
@@ -27,6 +27,46 @@ const ManageUser = () => {
             title: 'Roles',
             number: 4
         }
+    ];
+
+    const userTableHeading = ['User ID', 'Name', 'Username', 'Email', 'Creation Date', 'User Details', 'Action'];
+
+    const userData = [
+        {
+            id: 54345,
+            name: 'Ifaz',
+            username: 'ifaz',
+            email: 'ifaz@gmail.com',
+            date: '4:44 Am, 17 August 2020',
+        },
+        {
+            id: 54345,
+            name: 'Ifaz',
+            username: 'ifaz',
+            email: 'ifaz@gmail.com',
+            date: '4:44 Am, 17 August 2020',
+        },
+        {
+            id: 54345,
+            name: 'Ifaz',
+            username: 'ifaz',
+            email: 'ifaz@gmail.com',
+            date: '4:44 Am, 17 August 2020',
+        },
+        {
+            id: 54345,
+            name: 'Ifaz',
+            username: 'ifaz',
+            email: 'ifaz@gmail.com',
+            date: '4:44 Am, 17 August 2020',
+        },
+        {
+            id: 54345,
+            name: 'Ifaz',
+            username: 'ifaz',
+            email: 'ifaz@gmail.com',
+            date: '4:44 Am, 17 August 2020',
+        },
     ]
 
     return (
@@ -79,72 +119,7 @@ const ManageUser = () => {
 
 
                     {/* Data Table  */}
-
-                    <table className="table table-striped table-responsive mt-4">
-                        <thead className="thead-success" style={{ background: '006838' }}>
-                            <tr>
-                                <th scope="col">User Id</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">Username</th>
-                                <th scope="col">Email</th>
-                                <th scope="col">Creation Date</th>
-                                <th scope="col">User Details</th>
-                                <th scope="col">Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>#534531</td>
-                                <td>Ifaz Ahmed</td>
-                                <td>Ifaz Ahmed</td>
-                                <td>ifaz@gmail.com</td>
-                                <td>@4:44 Am, 17 August 2020</td>
-                                <td><Link to="/">View Details</Link></td>
-                                <td className="d-flex align-items-center justify-content-between">
-                                    <button className="btn btn-success me-1"><span className="fas fa-edit"></span>edit</button>
-                                    <button className="btn btn-danger"><span className="fas fa-trash"></span>delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>#534531</td>
-                                <td>Ifaz Ahmed</td>
-                                <td>Ifaz Ahmed</td>
-                                <td>ifaz@gmail.com</td>
-                                <td>@4:44 Am, 17 August 2020</td>
-                                <td><Link to="/">View Details</Link></td>
-                                <td className="d-flex align-items-center justify-content-between">
-                                    <button className="btn btn-success me-1"><span className="fas fa-edit"></span>edit</button>
-                                    <button className="btn btn-danger"><span className="fas fa-trash"></span>delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>#534531</td>
-                                <td>Ifaz Ahmed</td>
-                                <td>Ifaz Ahmed</td>
-                                <td>ifaz@gmail.com</td>
-                                <td>@4:44 Am, 17 August 2020</td>
-                                <td><Link to="/">View Details</Link></td>
-                                <td className="d-flex align-items-center justify-content-between">
-                                    <button className="btn btn-success me-1"><span className="fas fa-edit"></span>edit</button>
-                                    <button className="btn btn-danger"><span className="fas fa-trash"></span>delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>#534531</td>
-                                <td>Ifaz Ahmed</td>
-                                <td>Ifaz Ahmed</td>
-                                <td>ifaz@gmail.com</td>
-                                <td>@4:44 Am, 17 August 2020</td>
-                                <td><Link to="/">View Details</Link></td>
-                                <td className="d-flex align-items-center justify-content-between">
-                                    <button className="btn btn-success me-1"><span className="fas fa-edit"></span>edit</button>
-                                    <button className="btn btn-danger"><span className="fas fa-trash"></span>delete</button>
-                                </td>
-                            </tr>
-
-
-                        </tbody>
-                    </table>
+                    <DataTable userData={userData} headings={userTableHeading}/>
                 </div>
                 <RightSidebar />
             </div>
