@@ -1,4 +1,4 @@
-import React from 'react';
+
 import management from '../../image/management.jpg';
 import './RightSidebar.css';
 import products from '../../image/products.jpg'
@@ -7,18 +7,21 @@ import tickets from '../../image/tickets.jpg'
 import leads from '../../image/leads.jpg'
 
 const RightSidebar = () => {
-    const currentURL = window.location.href
+    const currentURL = window.location.href;
     console.log(currentURL);
-
+    const userURL = 'http://localhost:3000/dash-board/admin/manage-user';
+    const groupURL = 'http://localhost:3000/dash-board/admin/manage-group';
+    const roleURL = 'http://localhost:3000/dash-board/admin/manage-role';
+    console.log(currentURL === userURL)
     return (
-        <div className="col-md-3" style={{position:'relative'}}>
+        <div className="col-md-3" style={{ position: 'relative' }}>
             {/* Header Part  */}
             <div className="header d-flex align-items-center justify-content-between mt-2">
                 <div className="d-flex">
                     <img src={management} alt="management" />
                     <h4>Management</h4>
                 </div>
-                <span className="fas fa-user-cog" style={{color:'#FF514F'}}></span>
+                <span className="fas fa-user-cog" style={{ color: '#FF514F' }}></span>
             </div>
             <h4>Manage</h4>
             <p style={{ color: '#C1C1C1' }}>
@@ -27,7 +30,7 @@ const RightSidebar = () => {
 
             {/* Manage Blocks  */}
             <div className="manage-block d-flex align-items-center mb-4">
-                <div className="number">1</div>
+                <div className="number" style={{background:currentURL===userURL? '#FF514F': '#9BD6AB'}}>1</div>
                 <div className="manage-block-description">
                     <h4>Manage Users</h4>
                     <p>Let's you manage users</p>
@@ -35,7 +38,7 @@ const RightSidebar = () => {
             </div>
 
             <div className="manage-block d-flex align-items-center mb-4">
-                <div className="number">2</div>
+                <div className="number" style={{background:currentURL===groupURL? '#FF514F': '#9BD6AB'}}>2</div>
                 <div className="manage-block-description">
                     <h4>Manage Groups</h4>
                     <p>Let's you manage groups</p>
@@ -43,7 +46,7 @@ const RightSidebar = () => {
             </div>
 
             <div className="manage-block d-flex align-items-center mb-4">
-                <div className="number">3</div>
+                <div className="number" style={{background:currentURL===roleURL? '#FF514F': '#9BD6AB'}}>3</div>
                 <div className="manage-block-description">
                     <h4>Manage Roles</h4>
                     <p>Let's you manage Roles</p>
