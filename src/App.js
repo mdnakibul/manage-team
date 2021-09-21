@@ -12,7 +12,7 @@ function App() {
         <Route exact path="/">
           <Dashboard/>
         </Route>
-        <Route exact path="/dash-board/admin/manage-user">
+        <Route path="/dash-board/admin/manage-user">
           <Dashboard/>
         </Route>
       </Switch>

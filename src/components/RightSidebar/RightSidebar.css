@@ -1,0 +1,24 @@
+.number {
+    font-size: 35px;
+    background: #FF514F;
+    padding: 15px 25px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.manage-block-description h4, .manage-block-description p{
+    margin:0px;
+    padding-bottom: 5px
+}
+.manage-block-description p{
+    font-size: 13px;
+    color:#C1C1C1;
+}
+.quick-links{
+    position: absolute;
+    top: 100%;
+    right: 0;
+}
+.quick-link-block p{
+    margin:0px;
+    font-size:12px;
+}

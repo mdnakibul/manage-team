@@ -7,6 +7,7 @@ const Dashboard = () => {
         <div className="container">
             <div className="row">
                 <LeftSidebar />
+                <div className="col-md-7"></div>
                 <RightSidebar />
             </div>
         </div>
