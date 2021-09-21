@@ -58,9 +58,9 @@ const Dashboard = () => {
                     {/* Seach bar  */}
 
                     <form action="" className="mt-3 ms-auto" style={{ maxWidth: '250px' }}>
-                        <div class="input-group">
-                            <div class="form-outline">
-                                <input type="search" id="form1" class="form-control" placeholder="Search...." />
+                        <div className="input-group">
+                            <div className="form-outline">
+                                <input type="search" id="form1" className="form-control" placeholder="Search...." />
                             </div>
                         </div>
                     </form>
@@ -68,7 +68,7 @@ const Dashboard = () => {
 
                     {/* Data Table  */}
 
-                    <table class="table table-striped table-responsive mt-4">
+                    <table className="table table-striped table-responsive mt-4">
                         <thead className="thead-success" style={{background:'006838'}}>
                             <tr>
                                 <th scope="col">User Id</th>

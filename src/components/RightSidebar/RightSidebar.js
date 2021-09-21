@@ -7,6 +7,9 @@ import tickets from '../../image/tickets.jpg'
 import leads from '../../image/leads.jpg'
 
 const RightSidebar = () => {
+    const currentURL = window.location.href
+    console.log(currentURL);
+
     return (
         <div className="col-md-3" style={{position:'relative'}}>
             {/* Header Part  */}
