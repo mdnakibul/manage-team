@@ -10,9 +10,9 @@ import { useHistory } from 'react-router';
 const RightSidebar = () => {
     const currentURL = window.location.href;
     console.log(currentURL);
-    const userURL = 'http://localhost:3000/dash-board/admin/manage-user';
-    const groupURL = 'http://localhost:3000/dash-board/admin/manage-group';
-    const roleURL = 'http://localhost:3000/dash-board/admin/manage-role';
+    const userURL = 'https://manage-team.netlify.app/dash-board/admin/manage-user';
+    const groupURL = 'https://manage-team.netlify.app/dash-board/admin/manage-group';
+    const roleURL = 'https://manage-team.netlify.app/dash-board/admin/manage-role';
     console.log(currentURL === userURL);
 
     const history = useHistory();
@@ -44,7 +44,7 @@ const RightSidebar = () => {
 
             {/* Manage Blocks  */}
             <div className="manage-block d-flex align-items-center mb-4" onClick={pushToUser}>
-                <div className="number" style={{background:currentURL===userURL || currentURL === 'http://localhost:3000/'? '#FF514F': '#9BD6AB'}}>1</div>
+                <div className="number" style={{background:currentURL===userURL || currentURL === 'https://manage-team.netlify.app/'? '#FF514F': '#9BD6AB'}}>1</div>
                 <div className="manage-block-description">
                     <h4>Manage Users</h4>
                     <p>Let's you manage users</p>
