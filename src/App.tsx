@@ -12,16 +12,16 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/">
-          <ManageUser/>
+          <ManageUser />
         </Route>
         <Route path="/dash-board/admin/manage-user">
-          <ManageUser/>
+          <ManageUser />
         </Route>
         <Route path="/dash-board/admin/manage-group">
-          <ManageGroup/>
+          <ManageGroup />
         </Route>
         <Route path="/dash-board/admin/manage-role">
-          <ManageRole/>
+          <ManageRole />
         </Route>
       </Switch>
     </Router>
