@@ -9,11 +9,9 @@ import { useHistory } from 'react-router';
 
 const RightSidebar = () => {
     const currentURL = window.location.href;
-    console.log(currentURL);
     const userURL = 'https://manage-team.netlify.app/dash-board/admin/manage-user';
     const groupURL = 'https://manage-team.netlify.app/dash-board/admin/manage-group';
     const roleURL = 'https://manage-team.netlify.app/dash-board/admin/manage-role';
-    console.log(currentURL === userURL);
 
     const history = useHistory();
 
