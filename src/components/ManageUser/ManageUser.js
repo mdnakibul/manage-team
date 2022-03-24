@@ -1,4 +1,3 @@
-import React from 'react';
 import DataTable from '../DataTable/DataTable';
 import LeftSidebar from '../LeftSidebar/LeftSidebar';
 import RightSidebar from '../RightSidebar/RightSidebar';

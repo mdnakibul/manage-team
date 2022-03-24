@@ -1,4 +1,3 @@
-import React from 'react';
 import LeftSidebar from '../LeftSidebar/LeftSidebar';
 import RightSidebar from '../RightSidebar/RightSidebar';
 import '../ManageUser/ManageUser.css'

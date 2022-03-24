@@ -1,5 +1,3 @@
-import React from 'react';
-
 const SummeryBlock = (props) => {
     props = props.summeryInfo;
     return (

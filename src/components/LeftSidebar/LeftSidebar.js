@@ -1,4 +1,3 @@
-import React from 'react';
 import logo from '../../image/shopkpr logo.jpg';
 import './LeftSidebar.css'
 
