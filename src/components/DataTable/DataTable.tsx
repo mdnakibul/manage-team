@@ -1,8 +1,21 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import TableHead from './TableHead';
 
-const DataTable = (props) => {
+type User = {
+    date: string;
+    email?: string;
+    id: number;
+    name: string;
+    username?: string;
+    description?: string;
+}
+
+interface IProps {
+    headings: string[]
+    userData: User[]
+}
+
+const DataTable = (props: IProps) => {
     return (
         <table className="table table-striped table-responsive mt-4">
             <TableHead headingData={props.headings} />
