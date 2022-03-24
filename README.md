@@ -14,3 +14,8 @@ This is a front-end of a team management system. I have a lot of things to impro
 3. Boostrap
 4. JavaScript
 5. React.js
+
+### Live: 
+[Manage Team](https://manage-team.netlify.app/)
+Developed By: 
+##  [Md Nakibul Hosen Nahid](https://www.linkedin.com/in/md-nakibul-hosen-nahid/)
